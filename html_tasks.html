@@ -1,0 +1,301 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TASK 1</title>
+        <style>
+            table,th,td{
+            
+            border-color: solid white;
+        
+            text-align: center;
+            
+                }
+                th,td{
+                width: 100px; 
+                background-color:pink;
+                }
+                div{
+                    border :1px solid black;
+                background-color: paleturquoise;
+                width: 400px;
+                height:90px ;
+                padding: 10px;
+                }
+                .block1{
+                   background-color: azure;
+                   border:1px solid black;
+                   height: 200px;
+                   width: 250px;
+                   
+                }
+                .block2{
+                    background-color: aliceblue;
+                    border:1px soild black;
+                    text-align: left;
+                    width:550px;
+                    height:550px;
+                    padding: 10px;
+                    
+                }
+                #i1{
+                    text-align:left;
+                    text-decoration-color: blue;
+                     text-decoration:5px solid blue;
+                     
+                }
+                button{
+                    background-color:bisque;
+                    text-decoration-color: aliceblue;
+                    text-align: center;
+                }
+                label{
+                    text-align:left;
+                    padding: 5px;
+                    flex:100px;
+                }
+        </style>
+</head>
+<body>
+    <h1 style="text-align:center;"> HTML</h1>
+      <table border="1" cellpadding="10" cellspacing="5">
+        <caption  style="text-align:left;">TASK 1</caption>
+        <caption text-align="centre">student info</caption>
+        <tr>
+            <td>Firstname</td>
+            <td>lastname</td>
+            <td>Age</td>
+        </tr>
+        <tr>
+            <th>Riya</th>
+            <th>verma</th>
+            <th>21</th>
+        </tr>
+        <tr>
+            <th>Rahul</th>
+            <th>smith</th>
+            <th>23</th>
+        </tr>
+        <tr>
+            <th>Ridhi</th>
+            <th>setty</th>
+            <th>21</th>
+        </tr>
+      </table> <br><br><br>
+      <p style="text-align:left;">TASK 2</p>
+<div class="block1">
+   <p > choose your favorite drink:</p>
+ <ul>
+   <li>coffee</li>
+   <li>Tea
+    <ul>
+    <li>black tea</li>
+    <li>green tea</li>
+    </ul>
+   </li>
+   <li>milk</li>
+   </ul>
+</div>
+<br><br>
+ <div> 
+    <p>Click any of the following links</p>
+
+     <a href="https://www.google.in/">  google|</a>
+     <a href="https://www.youtube.in/">youtube|</a>
+     <a href="https://www.netflix.com/">netflix|</a>
+     <a href="https://www.amazon.in/">amazon|</a>
+     <br>
+ </div>
+ <br><br>
+ <p style="text-align:left;">TASK 3</p>
+ <form>
+    
+ <h2 id="i1" >Registration Form</h2>
+ <div class="block2">
+    
+    <label> First Name : </label>
+    <input type="text" placeholder="enter your first name " style="width:400px; "><br>
+    <label> Last Name : </label>
+    <input type="text" placeholder="enter your last name " style="width:400px; text-align:left;"><br>
+    
+<label>E-mail :</label>
+<input type="email" placeholder="email" style="width:450px; text-align: left;"><br>
+<label>password : </label>
+<input type="pass" placeholder="enter  your password" style="width:450px; text-align: left;">
+<br>
+<label> Re-enter password : </label>
+<input type="pass" placeholder="enter  your password" style="width:400px; text-align: left;"><br>
+<hr>
+<label>Gender :</label>
+<input type="radio">Male
+
+<input type="radio">Female
+<br><hr>
+<label>Phone Number :</label>
+<input type="number"><br><br>
+<label>Address :</label>
+<input type="name" style="width:450px; height: 50px;" >
+<br><br>
+<label>State :</label>
+<input type="name" placeholder="- - - -Your state - - - - -" style="width:300px; text-align: center;">
+<br><br>
+<label>Country</label>
+<select name="Country" id="Country" style="width:100px;">
+<option value="india">india</option>
+<option value="russia">russia</option>
+<option value="Italy">Italy</option>
+<option value="USA">USA</option>
+<option value="France">France</option>
+<option value="Japan">Japan</option>
+<option value="South Korea">South korea</option>
+<option value="UK">Uk</option>
+ </select>
+<br><hr>
+<label>Languages known :</label>
+<input type="checkbox">English
+<input type="checkbox">Kannada
+<input type="checkbox">Hindi
+<input type="checkbox">Konkani
+<input type="checkbox">Marathi
+<br>
+<hr>
+<input type="checkbox">Here by I declare all the given details are true
+<hr>
+<p style="text-align: right;">Log in to <a href="https://www.m.acharya.ac.in/">Acharya</a>website</p>
+<hr>
+<button>Register</button>
+
+</form>
+ 
+ </div>
+<br>
+<br>
+<form>
+    <table>
+        <h3 style=" text-align:left;">Registration Form using table</h3>
+        <tr>
+            <td>
+                First Name:
+            </td>
+            <td>
+                <input type="text" placeholder="enter your first name " style="width:400px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Last Name:
+            </td>
+            <td>
+                <input type="text" placeholder="enter your last name " style="width:400px; text-align:left;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                E-mail:
+            </td>
+            <td>
+                <input type="email" placeholder="email" style="width:400px; text-align: left;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                password: 
+            </td>
+            <td>
+                <input type="pass" placeholder="enter  your password" style="width:400px;">
+            </td>
+        </tr>
+        <tr><td>
+            re-entre pass:
+            </td>
+            <td>
+                <input type="pass" placeholder="enter  your password" style="width:400px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gender:
+            </td>
+            <td>
+                <input type="radio" style="text-align:left;">Male
+
+                <input type="radio">Female
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ph-Number:
+            </td>
+            <td>
+                <input type="number" style="width:400px">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Address:
+            </td>
+            <td>
+                <input type="name" style="width:400px; height: 50px;" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                state:
+            </td>
+            <td>
+                <input type="name" placeholder="- - - -Your state - - - - -" style="width:400px; text-align: center;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Country:
+            </td>
+            <td>
+                <select name="Country" id="Country" style="width:400px;">
+                    <option value="india">india</option>
+                    <option value="russia">russia</option>
+                    <option value="Italy">Italy</option>
+                    <option value="USA">USA</option>
+                    <option value="France">France</option>
+                    <option value="Japan">Japan</option>
+                    <option value="South Korea">South korea</option>
+                    <option value="UK">Uk</option>
+                     </select>
+            </td>
+        </tr>
+        <td>
+            Languages Known:
+        </td>
+        <td>
+            <input type="checkbox">English
+<input type="checkbox">Kannada
+<input type="checkbox">Hindi
+<input type="checkbox">Konkani
+<input type="checkbox">Marathi
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: left;">
+            
+            <input type="checkbox" >Here by I declare all the given details are true
+            
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <p style="text-align: right;">Log in to <a href="https://www.m.acharya.ac.in/">Acharya</a> website</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button>Register</button>
+        </td>
+    </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
+    

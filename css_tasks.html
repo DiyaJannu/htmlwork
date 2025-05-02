@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+       .student-table, .student-table th, .student-table td {
+            
+            border-color: solid black;
+        
+            text-align: center;
+           border-radius: 10px;
+            
+                }
+                .student-table th, .student-table td {
+                width: 100px; 
+                background-color:rgb(211, 127, 155);
+                border-radius: 10px;
+                }
+                #mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+#about {
+  top: 20px;
+  background-color:peru;
+}
+
+#work {
+  top: 80px;
+  background-color:palevioletred;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color:orangered;
+}
+                .shapes-container {
+            display: grid;
+            grid-template-columns: repeat(3, 50px);
+            grid-gap: 10px;
+            border:1px solid black;
+            padding:10px;
+            width:180px;
+            border-radius:10px;
+            
+
+        }
+        .shape {
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgb(109, 230, 93);
+        }
+        .rectangle {
+            border-radius: 5PX;
+        }
+        .rounded-rectangle {
+             border-radius:10px;
+        }
+        .circle {
+            border-radius:70PX;
+        }
+        ul.horizontal-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.horizontal-nav li {
+    float: left;
+}
+
+ul.horizontal-nav li a {
+    display: block;
+    color: black;
+    background-color: violet;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+ul.horizontal-nav li a:hover {
+    background-color: pink;
+}
+ul.vertical-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+      
+        li.vertical-nav{
+            display: inline;
+            float:left;
+            border:10px soild black;
+            
+  border-right:1px solid #bbb;
+        }
+        ul.vertical-nav li a {
+    display: block;
+    color: black;
+    background-color: violet;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    border: 1px solid white;
+    width: 100px;
+}
+      
+ul.vertical-nav li a:hover {
+    background-color: pink;
+}
+.block1{
+    border-color: solid black;
+    border:2px;
+padding:10px;
+width:350px;
+height: 70px;
+}
+li.active {
+  background-color:rgb(164, 18, 67);
+  color: white;
+}
+.block2{
+    border:2px black;
+    width:320px;
+    height: 400px;
+    padding:20px;
+    background-color: beige;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+} 
+  
+.task4-table {
+    width: 75%;
+    border-collapse: collapse;
+}
+
+.task4-table th, .task4-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.task4-table thead tr {
+    background-color: #28a745;
+    color: white;
+}
+
+.task4-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.task4-table tbody tr:hover {
+    background-color: #ddd;
+}
+#container {
+        background-color:plum; /* Changed to stand out */
+        width: 600px;
+        padding: 20px;
+        border: 1px dotted purple;
+        box-sizing: border-box; /* Ensures padding does not cause overflow */
+    }
+    #nav {
+        float: left;
+        width: 150px;
+        margin-right: 20px;
+    }
+
+    #nav a {
+        display: block;
+        width: 100px;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: white;
+        color: blue;
+        text-decoration: none;
+        border-left: 10px solid black;
+    }
+
+    #nav a:hover {
+        background-color: #eee;
+    }
+
+    #content {
+        overflow: hidden;
+    }
+
+    em {
+        font-style: italic;
+    }
+    
+    h1 {
+        color: purple;
+        font-size: 2em;
+        border-bottom: 1px solid #000;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+  
+  <div id="mySidenav" class="sidenav">
+    <a href="#" id="about">About</a>
+    <a href="#" id="work">work</a>
+    <a href="#" id="projects">Projects</a>
+    <a href="#" id="contact">Contact</a>
+  </div>
+  
+  <div style="margin-left:80px;">
+    <p>TASK 3</p>
+    <h2>Hoverable Sidenav Buttons</h2>
+    <p>Hover over the buttons in the left side navigation to open them.</p>
+  </div>
+  <br><br><br>
+  <br><br><br><br>
+
+    <table  class="student-table" border="1" cellpadding="10" cellspacing="5">
+        <p  style="text-align:left;">TASK 1</p>
+        <h3 t style="text-align:centre";>student info</h3>
+        <tr>
+            <td>Firstname</td>
+            <td>lastname</td>
+            <td>Age</td>
+        </tr>
+        <tr>
+            <th>Riya</th>
+            <th>verma</th>
+            <th>21</th>
+        </tr>
+        <tr>
+            <th>Rahul</th>
+            <th>smith</th>
+            <th>23</th>
+        </tr>
+        <tr>
+            <th>Ridhi</th>
+            <th>setty</th>
+            <th>21</th>
+        </tr>
+      </table> <br><br>
+
+      <div class="shapes-container" >
+        <div class="shape rounded-rectangle"></div>
+        <div class="shape circle"></div>
+        <div class="shape rectangle"></div>
+        <div class="shape rounded-rectangle"></div>
+        <div class="shape oval"></div>
+        <div class="shape rounded-rectangle"></div>
+        <div class="shape circle"></div>
+        <div class="shape rounded-rectangle"></div>
+        <div class="shape rectangle"></div>
+        
+      </div><br><br>
+      <p  style="text-align:left;">TASK 2</p>
+      <h4  style="text-align:left;">Horizontal Navigation Bar</h4>
+   <div class="block1">
+<ul class="horizontal-nav"><li >
+    <li><a  class="active" href="#home">Home</a></li>
+    <li><a href="#java">Java</a></li>
+    <li><a href="#html">HTML</a></li>
+    <li><a href="#css">CSS</a></li>
+    </li>
+  </ul>
+  </div><br>
+
+      <h4  style="text-align:left;">Vertical Navigation Bar</h4>
+   <div class="block1">
+<ul class="vertical-nav">
+    <li><a  class="active" href="#home">Home</a></li>
+    <li><a href="#java">Java</a></li>
+    <li><a href="#html">HTML</a></li>
+    <li><a href="#css">CSS</a></li>
+  </ul>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>TASK 5</p>
+  <div style="margin-left:80px;" class="block2">
+    <img  style="border-radius: 100px; border:1px solid balck;"src="C:\Users\DIYA JANNU\OneDrive\Desktop\profile 1.jpg" alt="profile" class="center"></a><br>
+   
+<label style="text-align:centre;">Username</label>
+<input type="name" placeholder="username" style="border-radius:10px; text-align: center; width:320px"><br><br>
+<label style="text-align:center">password</label>
+<input type="password" placeholder="---------" style="border-radius:10px; text-align: center; width:320px"><br><br>
+<button style="border-radius:10px; width:320px; background-color: green; color: white;">Login</button>
+<br>
+<input type="checkbox">Remember me
+<br>
+<br>
+<div style="border-top:black; border-bottom: black; background-color:rgb(206, 206, 167);height: 50px; width:300px; padding:10px;">
+<button style="background-color: #f44336;">cancel</button>
+<p style="text-align: right;">remeber <a href="#">password?</a></p>
+</div>
+
+  </div>
+  <br>
+  <br>
+  <p>TASK 4</p>
+
+<table class="task4-table">
+    <thead>
+        <tr style="background-color: #28a745; color: white;">
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="background-color: #e1d8d8;">
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+        </tr>
+        <tr style="background-color: #e1d8d8;">
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr style="background-color: #e1d8d8;">
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Königlich Essen</td>
+            <td>Philip Cramer</td>
+            <td>Germany</td>
+        </tr>
+        <tr style="background-color: #e1d8d8;">
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<br>
+<p>TASK 6</p>
+<div id="container">
+    <h1>My first styled page</h1>
+
+    <div id="nav">
+        <a href="#">Home page</a>
+        <a href="#">Library</a>
+        <a href="#">My town</a>
+        <a href="#">Links</a>
+    </div>
+
+    <div id="content">
+        <p>Welcome to my styled page!</p>
+
+        <p>It lacks images, but at least it has style. And it has links, even if they don’t go anywhere...</p>
+
+        <p>There should be more here, but I don’t know what yet.</p>
+
+        <p><em>Made 1 May 2025<br>
+        by myself.</em></p>
+    </div>
+</div>
+
+</body>
+</html>
